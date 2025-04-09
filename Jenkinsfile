@@ -27,16 +27,5 @@ pipeline {
                 sh "echo INSTAGRAM_DFBASTIDAS "
             }
         }
-        stage("Imprimir variables de entorno, definidas en system"){
-            steps {
-                echo "${env.INSTAGRAM}"
-                echo "${INSTAGRAM}"
-                echo "INSTAGRAM"
-                echo "=============================="
-                sh "echo ${env.INSTAGRAM} "
-                sh "echo ${INSTAGRAM} "
-                sh """echo $INSTAGRAM """
-            }
-        }
     }
 }
